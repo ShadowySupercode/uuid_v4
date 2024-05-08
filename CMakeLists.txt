@@ -57,9 +57,6 @@ if (benchmark)
   add_subdirectory (benchmarks)
 endif ()
 
-add_executable(example example.cpp)
-target_link_libraries (example)
-
 add_library(${PROJECT_NAME} INTERFACE)
 add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
